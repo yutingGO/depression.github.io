@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>憂鬱與我們的距離</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 指定螢幕寬度為裝置寬度，畫面載入初始縮放比例100% -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="scrollTop.js"></script>
+    <script src="showtext.js"></script>
+    <style>
+            body {font-family: "Times New Roman", Georgia, Serif; background: #e0e4e8;}
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+			p{
+                font-family: 'Noto Sans TC', sans-serif;
+                letter-spacing: 4px;
+            }
+            .menu {
+			  display: none;
+			}
+    </style>
+
+  </head>
+  <body>
+    <div class="top">
+        <nav class="top-nav">
+            <a href="index.html">憂鬱與我們的距離</a>
+            <div class="top-Contents">
+                <a href="depressionQA.html">憂鬱症Q&A </a>
+                <a href="test.html">憂鬱測驗</a>
+                <a href="messageBoard.html">留言板</a>
+            </div>
+        </nav>
+    </div>
+  <div class="up">
+		
+  <div class="w3-content" style="max-width:1000px">
+ 		<h3 class="center">在開始測驗前，你要知道...</h3>
+ 		<div class="box1">
+ 		<table  class="center" border="0">
+ 			<tr>
+ 				<td><img src="images/text.png" width="40%"></td>
+ 				<td><img src="images/s512_choju8_0023_11.png" width="40%"></td>
+ 			</tr>	
+ 			<tr>
+ 				<td><H4>這是測驗不是診斷!</H4></td>
+ 				<td><H4>有憂鬱症傾向請尋求醫療機構的幫助!</H4></td>
+ 			</tr> 			
+ 		</table>
+ 		<br>
+ 		<div class="center" >
+ 			<a href="#text">
+			<input class="btn1"  type="button"  value="我知道了!">
+			</a>
+		</div>
+		<br>
+ 		</div>
+<div id="text" class="upup"> </div>		
+<div id="menu">
+	<div class="w3-container" style="max-width:1000px">
+    <h3 class="center" >憂鬱症的自我檢測</h3>
+    <div class="w3-row testcontainer1 testcard testpadding1">
+      <!--href=” javascript:void(0)”主要是讓它不執行a link的預設功能。-->
+      <!--onclick=”openMenu(event, ‘a01’)”  這串是執行JavaScript定義的function裡面有代入event跟對應的內容id。-->
+      <a href="javascript:void(0)" onclick="openMenu(event, 'a01');" id="myLink">
+      	<!--tablink是JavaScript要控制的元素-->       
+        <div class="w3-col s6 tablink">台灣人憂鬱症量表</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'a02');">
+        <div class="w3-col s6 tablink">病人健康問卷(PHQ-9)</div>
+      </a>
+    </div>
+    <!--台灣人憂鬱症量表-->
+    <div id="a01" class="testcontainer menu textpadding testcard">
+    	<br>
+		<h3 class="center"> 請你根據最近一週以來身體與情緒真正的感覺勾選最符合的一項。<h4><br>
+			<!--fieldset進行分組-->
+			<fieldset class ="test">
+				<h4 >1.我覺得想哭</h4>
+					<h5>
+					<input type="radio" name="t1" id="t1-0" value="0" checked>
+					<label for="t1-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t1" id="t1-1" value="1">
+					<label for="t1-1">幾天(1~2天)</label>
+					<input type="radio" name="t1" id="t1-2" value="2">
+					<label for="t1-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t1" id="t1-3" value="3">
+					<label for="t1-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >2.我覺得心情不好</h4>
+					<h5>
+					<input type="radio" name="t2" id="t2-0" value="0" checked>
+					<label for="t2-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t2" id="t2-1" value="1">
+					<label for="t2-1">幾天(1~2天)</label>
+					<input type="radio" name="t2" id="t2-2" value="2">
+					<label for="t2-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t2" id="t2-3" value="3">
+					<label for="t2-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>			
+			<fieldset class ="test">
+				<h4 >3.我覺得比以前容易發脾氣</h4>
+					<h5>
+					<input type="radio" name="t3" id="t3-0" value="0" checked>
+					<label for="t3-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t3" id="t3-1" value="1">
+					<label for="t3-1">幾天(1~2天)</label>
+					<input type="radio" name="t3" id="t3-2" value="2">
+					<label for="t3-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t3" id="t3-3" value="3">
+					<label for="t3-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >4.我睡不好</h4>
+					<h5>
+					<input type="radio" name="t4" id="t4-0" value="0" checked>
+					<label for="t4-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t4" id="t4-1" value="1">
+					<label for="t4-1">幾天(1~2天)</label>
+					<input type="radio" name="t4" id="t4-2" value="2">
+					<label for="t4-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t4" id="t4-3" value="3">
+					<label for="t4-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >5.我覺得不想吃東西</h4>
+					<h5>
+					<input type="radio" name="t5" id="t5-0" value="0" checked>
+					<label for="t5-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t5" id="t5-1" value="1">
+					<label for="t5-1">幾天(1~2天)</label>
+					<input type="radio" name="t5" id="t5-2" value="2">
+					<label for="t5-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t5" id="t5-3" value="3">
+					<label for="t5-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >6.我覺得胸口悶悶的 ( 心肝頭或胸坎綁綁 )</h4>
+					<h5>
+					<input type="radio" name="t6" id="t6-0" value="0" checked>
+					<label for="t6-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t6" id="t6-1" value="1">
+					<label for="t6-1">幾天(1~2天)</label>
+					<input type="radio" name="t6" id="t6-2" value="2">
+					<label for="t6-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t6" id="t6-3" value="3">
+					<label for="t6-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >7.我覺得不輕鬆、不舒服 ( 不爽快 )</h4>
+					<h5>
+					<input type="radio" name="t7" id="t7-0" value="0" checked>
+					<label for="t7-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t7" id="t7-1" value="1">
+					<label for="t7-1">幾天(1~2天)</label>
+					<input type="radio" name="t7" id="t7-2" value="2">
+					<label for="t7-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t7" id="t7-3" value="3">
+					<label for="t7-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >8.我覺得身體疲勞虛弱、無力( 身體很虛、沒力氣、元氣及體力 )</h4>
+					<h5>
+					<input type="radio" name="t8" id="t8-0" value="0" checked>
+					<label for="t8-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t8" id="t8-1" value="1">
+					<label for="t8-1">幾天(1~2天)</label>
+					<input type="radio" name="t8" id="t8-2" value="2">
+					<label for="t8-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t8" id="t8-3" value="3">
+					<label for="t8-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >9.我覺得很煩</h4>
+					<h5>
+					<input type="radio" name="t9" id="t9-0" value="0" checked>
+					<label for="t9-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t9" id="t9-1" value="1">
+					<label for="t9-1">幾天(1~2天)</label>
+					<input type="radio" name="t9" id="t9-2" value="2">
+					<label for="t9-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t9" id="t9-3" value="3">
+					<label for="t9-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >10.我覺得記憶力不好</h4>
+					<h5>
+					<input type="radio" name="t10" id="t10-0" value="0" checked>
+					<label for="t10-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t10" id="t10-1" value="1">
+					<label for="t10-1">幾天(1~2天)</label>
+					<input type="radio" name="t10" id="t10-2" value="2">
+					<label for="t10-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t10" id="t10-3" value="3">
+					<label for="t10-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >11.我覺得做事時無法專心</h4>
+					<h5>
+					<input type="radio" name="t11" id="t11-0" value="0" checked>
+					<label for="t11-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t11" id="t11-1" value="1">
+					<label for="t11-1">幾天(1~2天)</label>
+					<input type="radio" name="t11" id="t11-2" value="2">
+					<label for="t11-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t11" id="t11-3" value="3">
+					<label for="t11-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >12.我覺得想事情或做事時，比平常要緩慢</h4>
+					<h5>
+					<input type="radio" name="t12" id="t12-0" value="0" checked>
+					<label for="t12-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t12" id="t12-1" value="1">
+					<label for="t12-1">幾天(1~2天)</label>
+					<input type="radio" name="t12" id="t12-2" value="2">
+					<label for="t12-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t12" id="t12-3" value="3">
+					<label for="t12-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >13.我覺得比以前較沒信心</h4>
+					<h5>
+					<input type="radio" name="t13" id="t13-0" value="0" checked>
+					<label for="t13-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t13" id="t13-1" value="1">
+					<label for="t13-1">幾天(1~2天)</label>
+					<input type="radio" name="t13" id="t13-2" value="2">
+					<label for="t13-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t13" id="t13-3" value="3">
+					<label for="t13-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >14.我覺得比較會往壞處想</h4>
+					<h5>
+					<input type="radio" name="t14" id="t14-0" value="0" checked>
+					<label for="t14-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t14" id="t14-1" value="1">
+					<label for="t14-1">幾天(1~2天)</label>
+					<input type="radio" name="t14" id="t14-2" value="2">
+					<label for="t14-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t14" id="t14-3" value="3">
+					<label for="t14-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >15.我覺得想不開、甚至想死</h4>
+					<h5>
+					<input type="radio" name="t15" id="t15-0" value="0" checked>
+					<label for="t15-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t15" id="t15-1" value="1">
+					<label for="t15-1">幾天(1~2天)</label>
+					<input type="radio" name="t15" id="t15-2" value="2">
+					<label for="t15-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t15" id="t15-3" value="3">
+					<label for="t15-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >16.我覺得對什麼事都失去興趣</h4>
+					<h5>
+					<input type="radio" name="t16" id="t16-0" value="0" checked>
+					<label for="t16-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t16" id="t16-1" value="1">
+					<label for="t16-1">幾天(1~2天)</label>
+					<input type="radio" name="t16" id="t16-2" value="2">
+					<label for="t16-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t16" id="t16-3" value="3">
+					<label for="t16-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >17.我覺得身體不舒服( 如頭痛、頭暈、心悸或肚子不舒服…等 )</h4>
+					<h5>
+					<input type="radio" name="t17" id="t17-0" value="0" checked>
+					<label for="t17-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t17" id="t17-1" value="1">
+					<label for="t17-1">幾天(1~2天)</label>
+					<input type="radio" name="t17" id="t17-2" value="2">
+					<label for="t17-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t17" id="t17-3" value="3">
+					<label for="t17-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test">
+				<h4 >18.我覺得自己很沒用</h4>
+					<h5>
+					<input type="radio" name="t18" id="t18-0" value="0" checked>
+					<label for="t18-0">沒有或極少(1天以下)</label>
+					<input type="radio" name="t18" id="t18-1" value="1">
+					<label for="t18-1">幾天(1~2天)</label>
+					<input type="radio" name="t18" id="t18-2" value="2">
+					<label for="t18-2">一半以上的天數(3~4天)</label>
+					<input type="radio" name="t18" id="t18-3" value="3">
+					<label for="t18-3">幾乎每天(5~7天)</label>
+					</h5>
+			</fieldset>														
+		<br> 
+		<div class="center" >
+			<input class="btn1"  type="button" value="看結果" onclick="javascript:showtest()">
+		</div>
+    </div>
+    <!--病人健康問卷(PHQ-9)-->
+    <div id="a02" class="testcontainer menu textpadding testcard">
+    	<br>
+		<h3 class="center">在過去兩個星期，有多少時候您受到以下任何問題所困擾？<h4><br>
+			<fieldset class ="test1">
+				<h4 >1.我做事時提不起勁或沒有樂趣</h4>
+					<h5>
+					<input type="radio" name="q1" id="q1-0" value="0" checked>
+					<label for="q1-0">完全沒有</label>
+					<input type="radio" name="q1" id="q1-1" value="1">
+					<label for="q1-1">幾天</label>
+					<input type="radio" name="q1" id="q1-2" value="2">
+					<label for="q1-2">一半以上的天數</label>
+					<input type="radio" name="q1" id="q1-3" value="3">
+					<label for="q1-3">幾乎每天</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test1">
+				<h4>2.我感到心情低落、沮喪或絕望</h4>
+					<h5>
+					<input type="radio" name="q2" id="q2-0" value="0" checked>
+					<label for="q2-0">完全沒有</label>
+					<input type="radio" name="q2" id="q2-1" value="1">
+					<label for="q2-1">幾天</label>
+					<input type="radio" name="q2" id="q2-2" value="2">
+					<label for="q2-2">一半以上的天數</label>
+					<input type="radio" name="q2" id="q2-3" value="3">
+					<label for="q2-3">幾乎每天</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test1">	    
+				<h4>3.我入睡困難、睡不安穩或睡眠過多</h4>
+					<h5>
+					<input type="radio" name="q3" id="q3-0" value="0" checked>
+					<label for="q3-0">完全沒有</label>
+					<input type="radio" name="q3" id="q3-1" value="1">
+					<label for="q3-1">幾天</label>
+					<input type="radio" name="q3" id="q3-2" value="2">
+					<label for="q3-2">一半以上的天數</label>
+					<input type="radio" name="q3" id="q3-3" value="3">
+					<label for="q3-3">幾乎每天</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test1">		  
+				<h4>4.我感覺疲倦或沒有活力</h4>
+					<h5>
+					<input type="radio" name="q4" id="q4-0" value="0" checked>
+					<label for="q4-0">完全沒有</label>
+					<input type="radio" name="q4" id="q4-1" value="1">
+					<label for="q4-1">幾天</label>
+					<input type="radio" name="q4" id="q4-2" value="2">
+					<label for="q4-2">一半以上的天數</label>
+					<input type="radio" name="q4" id="q4-3" value="3">
+					<label for="q4-3">幾乎每天</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test1">
+				<h4>5.我食慾不振或吃太多</h4>
+					<h5>
+					<input type="radio" name="q5" id="q5-0" value="0" checked>
+					<label for="q5-0">完全沒有</label>
+					<input type="radio" name="q5" id="q5-1" value="1">
+					<label for="q5-1">幾天</label>
+					<input type="radio" name="q5" id="q5-2" value="2">
+					<label for="q5-2">一半以上的天數</label>
+					<input type="radio" name="q5" id="q5-3" value="3">
+					<label for="q5-3">幾乎每天</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test1">
+				<h4>6.我覺得自己很糟、失敗，或讓自己或家人失望</h4>
+					<h5>
+					<input type="radio" name="q6" id="q6-0" value="0" checked>
+					<label for="q6-0">完全沒有</label>
+					<input type="radio" name="q6" id="q6-1" value="1">
+					<label for="q6-1">幾天</label>
+					<input type="radio" name="q6" id="q6-2" value="2">
+					<label for="q6-2">一半以上的天數</label>
+					<input type="radio" name="q6" id="q6-3" value="3">
+					<label for="q6-3">幾乎每天</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test1">
+				<h4>7.我對事物專注有困難， 例如閱讀報紙或看電視</h4>
+					<h5>
+					<input type="radio" name="q7" id="q7-0" value="0" checked>
+					<label for="q7-0">完全沒有</label>
+					<input type="radio" name="q7" id="q7-1" value="1">
+					<label for="q7-1">幾天</label>
+					<input type="radio" name="q7" id="q7-2" value="2">
+					<label for="q7-2">一半以上的天數</label>
+					<input type="radio" name="q7" id="q7-3" value="3">
+					<label for="q7-3">幾乎每天</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test1">
+				<h4>8.  我動作或說話速度緩慢，或煩躁或坐立不安</h4>
+					<h5>
+					<input type="radio" name="q8" id="q8-0" value="0" checked>
+					<label for="q8-0">完全沒有</label>
+					<input type="radio" name="q8" id="q8-1" value="1">
+					<label for="q8-1">幾天</label>
+					<input type="radio" name="q8" id="q8-2" value="2">
+					<label for="q8-2">一半以上的天數</label>
+					<input type="radio" name="q8" id="q8-3" value="3">
+					<label for="q8-3">幾乎每天</label>
+					</h5>
+			</fieldset>
+			<fieldset class ="test1">
+				<h4>9.  我不如死掉或用某種方式傷害自己的念頭</h4>
+					<h5>
+					<input type="radio" name="q9" id="q9-0" value="0" checked>
+					<label for="q9-0">完全沒有</label>
+					<input type="radio" name="q9" id="q9-1" value="1">
+					<label for="q9-1">幾天</label>
+					<input type="radio" name="q9" id="q9-2" value="2">
+					<label for="q9-2">一半以上的天數</label>
+					<input type="radio" name="q9" id="q9-3" value="3">
+					<label for="q9-3">幾乎每天</label>
+					</h5>
+			</fieldset>
+		<br> 
+		<div class="center" >
+			<input class="btn1"  type="button" value="看結果" onclick="javascript:showans()">
+		</div>
+    </div>
+</div>  
+</div>	
+</div>
+</div>
+<script>
+    document.getElementById("myLink").click();
+</script>
+	<footer>
+		<div id="footermenu">
+		  <ul>
+		    <li style="list-style-type: none">參考資料</li>
+		    <li><a href="https://www.depression.org.tw/index.asp" target="_blank">社團臺灣憂鬱症防治協會</a></li>
+		    <li><a href="https://www.etmh.org/CustomPage/HtmlEditorPage.aspx?MId=929&ML=3" target="_blank">董氏基金會</a></li>
+		  </ul>
+		  <ul>
+		    <li style="list-style-type: none">素材來源</li>
+		    <li><a href="https://unsplash.com/photos/yZygONrUBe8" target="_blank">Ocean clouds seen from space</a></li>
+		    <li><a href="https://chojugiga.com/" target="_blank">ダ鳥獣戯画</a></li>
+		    </ul>
+		  <ul>
+		    <li style="list-style-type: none">參考模板</li>
+		    <li><a href="https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm" target="_blank">Gourmet Catering Template</a></li>
+		    <li><a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cafe&stacked=h" target="_blank">Cafe Template</a></li>
+		  </ul>
+		  <ul>
+		    <li style="list-style-type: none">參考程式</li>
+		    <li><a href="https://vivivvvvv.medium.com/%E7%95%99%E8%A8%80%E6%9D%BF%E7%B7%B4%E7%BF%92%E5%89%8D%E7%AB%AF-html-css-javascript-837f36b5fc23" target="_blank">留言板練習前端</a></li>
+		  </ul>
+		</div>
+    </footer>
+    <a href="#" class="toTop"> ↑ </a>
+  </body>
+</html>
